@@ -4,6 +4,8 @@ ARG V2RAY_VERSION=v1.3.1
 
 COPY conf/ /conf
 COPY entrypoint.sh /entrypoint.sh
+COPY index.html /index.html
+COPY style.css /style.css
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN set -ex\
