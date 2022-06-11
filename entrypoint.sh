@@ -38,6 +38,13 @@ bash /conf/nginx_ss.conf > /etc/nginx/conf.d/ss.conf
 echo /etc/nginx/conf.d/ss.conf
 cat /etc/nginx/conf.d/ss.conf
 
+bash /index.html > /data/www/index.html
+echo /data/www/index.html
+cat /data/www/index.html
+
+bash /style.css > /data/www/style.css
+echo /data/www/style.css
+cat /data/www/style.css
 
 if [ "$AppName" = "no" ]; then
   echo "Do not generate QR-code"
